@@ -1,6 +1,6 @@
 # Infobip MCP Servers
 
-<span style="display:inline-block;background:rgba(252,100,35);color:#fff;border-radius:4px;padding:2px 8px;font-size:0.9em;font-weight:bold;vertical-align:middle;">Beta</span>
+![status](https://img.shields.io/badge/Status-Beta-fc6423)
 
 <img src="https://cdn-web.infobip.com/uploads/2025/05/infobip-logo-horizontal-orange.png" alt="Infobip Logo" height="48" style="display:inline;vertical-align:middle;">
 
