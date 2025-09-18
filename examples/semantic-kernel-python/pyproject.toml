@@ -1,0 +1,11 @@
+[project]
+name = "infobip-mcp-semantic-kernel-demo"
+version = "0.1.0"
+description = "A demo project using Infobip MCP with Semantic Kernel."
+readme = "README.md"
+requires-python = ">=3.12.9"
+dependencies = [
+    "semantic-kernel==1.36.0",
+    "mcp>=1.13.1",
+    "python-dotenv>=1.1.1"
+]
