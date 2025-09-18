@@ -37,6 +37,10 @@ Below is a list of available remote MCP servers.
 
 For more details on supported endpoints, see the [Infobip MCP documentation](https://www.infobip.com/mcp).
 
+Examples of using Infobip MCP servers with different frameworks can be found in the [examples](./examples) directory.
+
+> If you need SSE transport support, append `/sse` to the endpoint URL (e.g., `https://mcp.infobip.com/sms/sse`).
+
 ### Using a STDIO Transport Bridge
 
 If your agent does not support remote MCP servers, you can use a bridge like [mcp-remote](https://github.com/geelen/mcp-remote).
