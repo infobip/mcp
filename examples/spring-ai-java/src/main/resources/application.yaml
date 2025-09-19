@@ -1,0 +1,20 @@
+spring:
+  application.name: infobip-mcp-client-example
+  main.banner-mode: off
+  ai:
+    bedrock:
+      aws:
+        region: ${AWS_REGION}
+        access-key: ${AWS_ACCESS_KEY}
+        secret-key: ${AWS_SECRET_KEY}
+      converse.chat.options.model: ${AWS_MODEL_ID}
+    mcp:
+      client:
+        type: SYNC
+        sse:
+          connections:
+            infobip-sms:
+              url: https://mcp.infobip.com
+              sse-endpoint: /sms/sse
+logging.level.root: off
+infobip.api.key: ${INFOBIP_API_KEY}
