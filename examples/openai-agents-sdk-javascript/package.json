@@ -1,0 +1,11 @@
+{
+  "name": "infobip-mcp-openai-agents-sdk-demo",
+  "version": "1.0.0",
+  "description": "A demo project using Infobip MCP with OpenAI agends SDK.",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@openai/agents": "^0.1.4",
+    "zod": "^3.25.76"
+  }
+}
