@@ -30,7 +30,6 @@ Below is a list of available remote MCP servers.
 | **WhatsApp**                         | `https://mcp.infobip.com/whatsapp`           |
 | **Viber**                            | `https://mcp.infobip.com/viber`              |
 | **RCS**                              | `https://mcp.infobip.com/rcs`                |
-| **Messages API**                     | `https://mcp.infobip.com/messages-api`       |
 | **2FA**                              | `https://mcp.infobip.com/2fa`                |
 | **People**                           | `https://mcp.infobip.com/people`             |
 | **Account Management**               | `https://mcp.infobip.com/account-management` |
