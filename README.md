@@ -113,6 +113,9 @@ Example configuration for Claude Desktop:
 }
 ```
 
+> OAuth flows won't be triggered when using SSE transport endpoints.
+> Use streamable HTTP transport endpoints for full OAuth support.
+
 ## 🛠️ Troubleshooting
 
 **Authentication and Authorization Issues**
