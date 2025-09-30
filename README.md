@@ -24,16 +24,18 @@ Below is a list of available remote MCP servers.
 
 **Base URL:** `https://mcp.infobip.com`
 
-| Server                 | Endpoint                                     |
-|------------------------|----------------------------------------------|
-| **SMS**                | `https://mcp.infobip.com/sms`                |
-| **WhatsApp**           | `https://mcp.infobip.com/whatsapp`           |
-| **Viber**              | `https://mcp.infobip.com/viber`              |
-| **RCS**                | `https://mcp.infobip.com/rcs`                |
-| **Messages API**       | `https://mcp.infobip.com/messages-api`       |
-| **2FA**                | `https://mcp.infobip.com/2fa`                |
-| **People**             | `https://mcp.infobip.com/people`             |
-| **Account Management** | `https://mcp.infobip.com/account-management` |
+| Server                               | Endpoint                                     |
+|--------------------------------------|----------------------------------------------|
+| **SMS**                              | `https://mcp.infobip.com/sms`                |
+| **WhatsApp**                         | `https://mcp.infobip.com/whatsapp`           |
+| **Viber**                            | `https://mcp.infobip.com/viber`              |
+| **RCS**                              | `https://mcp.infobip.com/rcs`                |
+| **Messages API**                     | `https://mcp.infobip.com/messages-api`       |
+| **2FA**                              | `https://mcp.infobip.com/2fa`                |
+| **People**                           | `https://mcp.infobip.com/people`             |
+| **Account Management**               | `https://mcp.infobip.com/account-management` |
+| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` |
+| **Infobip Documentation**            | `https://mcp.infobip.com/search`             |
 
 For more details on supported endpoints, see the [Infobip MCP documentation](https://www.infobip.com/mcp).
 
