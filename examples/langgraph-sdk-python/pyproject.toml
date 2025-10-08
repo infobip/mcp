@@ -1,0 +1,12 @@
+[project]
+name = "infobip-mcp-langgraph-sdk-demo"
+version = "0.1.0"
+description = "A demo project using Infobip MCP with LangGraph SDK."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-mcp-adapters>=0.1.11",
+    "langchain[aws]>=0.3.27",
+    "langgraph>=0.6.8",
+    "python-dotenv>=1.1.1",
+]
