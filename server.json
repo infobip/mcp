@@ -1,12 +1,12 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
-  "name": "io.github.infobip/infobip-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "com.infobip/mcp",
   "description": "Infobip MCP server for omnichannel communication and messaging. SMS, RCS, WhatsApp, Viber and more.",
   "repository": {
     "url": "https://github.com/infobip/mcp",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "2.0.0",
   "remotes": [
     {
       "type": "streamable-http",
@@ -16,7 +16,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": false,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -28,7 +37,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -40,7 +58,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": false,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -52,7 +79,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -64,7 +100,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": false,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -76,7 +121,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -88,7 +142,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": false,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -100,7 +163,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -112,7 +184,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": false,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -124,7 +205,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -136,7 +226,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": false,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -148,7 +247,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -160,7 +268,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": false,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -172,7 +289,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -184,7 +310,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": false,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
@@ -196,7 +331,16 @@
           "name": "Authorization",
           "description": "Infobip API key",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
         }
       ]
     },
