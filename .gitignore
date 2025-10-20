@@ -19,3 +19,7 @@ Thumbs.db
 
 # Environment files
 .env
+
+# MCP Registry files
+.mcpregistry*
+key.pem

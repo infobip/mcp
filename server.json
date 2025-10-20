@@ -1,0 +1,356 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "com.infobip/mcp",
+  "description": "Infobip MCP server for omnichannel communication and messaging. SMS, RCS, WhatsApp, Viber and more.",
+  "repository": {
+    "url": "https://github.com/infobip/mcp",
+    "source": "github"
+  },
+  "version": "2.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/sms",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/sms/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/whatsapp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/whatsapp/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/viber",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/viber/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/rcs",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/rcs/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/2fa",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/2fa/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/people",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/people/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/account-management",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/account-management/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/application-entity",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/application-entity/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Infobip API key",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "App xxxxxxxxxxxxxxxx",
+          "variables": {
+            "INFOBIP_API_KEY": {
+              "description": "Your Infobip API key",
+              "isSecret": true,
+              "isRequired": true
+            }
+          },
+          "value": "App {INFOBIP_API_KEY}"
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.infobip.com/search"
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.infobip.com/search/sse"
+    }
+  ]
+}
