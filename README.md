@@ -46,7 +46,6 @@ Examples of using Infobip MCP servers with different frameworks can be found in 
 
 Use the `HTTP` transport method to connect directly to an Infobip MCP Server:
 
-```json
 ### Using HTTP config
 
 Example configuration for Claude Desktop:
