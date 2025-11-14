@@ -48,7 +48,6 @@ Use the `HTTP` transport method to connect directly to an Infobip MCP Server:
 
 ### Using HTTP config
 
-Example configuration for Claude Desktop:
 
 ```json
 {
