@@ -42,11 +42,27 @@ Examples of using Infobip MCP servers with different frameworks can be found in 
 
 > If you need SSE transport support, append `/sse` to the endpoint URL (e.g., `https://mcp.infobip.com/sms/sse`).
 
+### Using an HTTP Transport Option
+
+Use the `HTTP` transport method to connect directly to an Infobip MCP Server:
+
+```json
+{
+ "mcpServers": {
+   "ib-sms": {
+     "type": "http",
+     "url": "https://mcp.infobip.com/sms",
+     "headers": {
+       "Authorization": "App ${INFOBIP_API_KEY}"
+     }
+   }
+ }
+}
+```
+
 ### Using a STDIO Transport Bridge
 
 If your agent does not support remote MCP servers, you can use a bridge like [mcp-remote](https://github.com/geelen/mcp-remote).
-
-Example configuration for Claude Desktop:
 
 ```json
 {
