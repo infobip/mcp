@@ -46,8 +46,6 @@ Examples of using Infobip MCP servers with different frameworks can be found in 
 
 Use the `HTTP` transport method to connect directly to an Infobip MCP Server:
 
-### Using HTTP config
-
 ```json
 {
  "mcpServers": {
@@ -65,8 +63,6 @@ Use the `HTTP` transport method to connect directly to an Infobip MCP Server:
 ### Using a STDIO Transport Bridge
 
 If your agent does not support remote MCP servers, you can use a bridge like [mcp-remote](https://github.com/geelen/mcp-remote).
-
-Example configuration for Claude Desktop:
 
 ```json
 {
