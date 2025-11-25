@@ -86,7 +86,7 @@ If your agent does not support remote MCP servers, you can use a bridge like [mc
 ## 🔐 Authentication and Authorization
 
 To use Infobip MCP servers, you need an Infobip account.
-If you don't have one, [create an Infobip account with a free trial](https://infobip.com?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
+If you don't have one, [create an Infobip account with a free trial](https://infobip.com/signup?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
 
 ### Using an API Key
 
