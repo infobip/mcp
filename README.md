@@ -128,9 +128,6 @@ Example configuration for Claude Desktop:
 }
 ```
 
-> OAuth flows won't be triggered when using SSE transport endpoints.
-> Use streamable HTTP transport endpoints for full OAuth support.
-
 ## Agent Permission and Access Control
 
 Effective AI agent governance requires implementing granular permission controls, especially for high-impact operations like message sending. Unrestricted access privileges pose substantial security vulnerabilities and operational hazards that can compromise system integrity and user trust.
