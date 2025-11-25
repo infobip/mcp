@@ -4,7 +4,7 @@
 
 <img src="https://cdn-web.infobip.com/uploads/2025/05/infobip-logo-horizontal-orange.png" alt="Infobip Logo" height="48" style="display:inline;vertical-align:middle;">
 
-[Infobip MCP Servers](https://www.infobip.com/mcp) let you build AI agents to interact with the Infobip platform through the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs).
+[Infobip MCP Servers](https://www.infobip.com/docs/mcp?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp) let you build AI agents to interact with the Infobip platform through the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs).
 Connect to Infobip and enable your agents to perform actions, such as sending messages over channels like SMS, WhatsApp, or Viber, or managing customer data in a controlled, production-grade environment.
 
 No more complex integrations or digging through endless documentation. Just plug in and let your AI do the talking.
@@ -36,7 +36,7 @@ Below is a list of available remote MCP servers.
 | **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` |
 | **Infobip Documentation**            | `https://mcp.infobip.com/search`             |
 
-For more details on supported endpoints, see the [Infobip MCP documentation](https://www.infobip.com/mcp).
+For more details on supported endpoints, see the [Infobip MCP documentation](https://www.infobip.com/docs/mcp?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
 
 Examples of using Infobip MCP servers with different frameworks can be found in the [examples](./examples) directory.
 
@@ -86,11 +86,11 @@ If your agent does not support remote MCP servers, you can use a bridge like [mc
 ## 🔐 Authentication and Authorization
 
 To use Infobip MCP servers, you need an Infobip account.
-If you don't have one, [create an Infobip account with a free trial](https://infobip.com/signup).
+If you don't have one, [create an Infobip account with a free trial](https://infobip.com?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
 
 ### Using an API Key
 
-If your MCP client supports adding additional headers through configuration or environment variables, you can use your [Infobip API key](https://www.infobip.com/docs/essentials/api-essentials/api-authentication#api-key-header) and provide it in the `Authorization` header using the following format: `App ${INFOBIP_API_KEY}`.
+If your MCP client supports adding additional headers through configuration or environment variables, you can use your [Infobip API key](https://www.infobip.com/docs/essentials/api-essentials/api-authentication?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp#api-key-header) and provide it in the `Authorization` header using the following format: `App ${INFOBIP_API_KEY}`.
 See the `mcp-remote` [example](#using-a-stdio-transport-bridge) above for setup details.
 
 ### Using OAuth 2.1
@@ -140,7 +140,7 @@ Make sure to follow official [MCP implementation guidelines](https://modelcontex
 ## 🛠️ Troubleshooting
 
 **Authentication and Authorization Issues**
-- Ensure you have a valid Infobip account and an [API key with a correct scope](https://www.infobip.com/docs/essentials/api-essentials/api-authentication#api-scopes-on-basic-auth-basic).
+- Ensure you have a valid Infobip account and an [API key with a correct scope](https://www.infobip.com/docs/essentials/api-essentials/api-authentication?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp#api-scopes-on-basic-auth-basic).
 - If using OAuth 2.1, verify your MCP client supports dynamic metadata discovery.
 - Confirm that required scopes are correctly configured in your MCP client.
 
@@ -148,7 +148,7 @@ Make sure to follow official [MCP implementation guidelines](https://modelcontex
 - Make sure the recipient phone number is valid and reachable.
 
 **Other Issues**
-- For HTTP status codes and error details, see the [troubleshooting guide](https://www.infobip.com/docs/essentials/api-essentials/response-status-and-error-codes#http-status-codes).
+- For HTTP status codes and error details, see the [troubleshooting guide](https://www.infobip.com/docs/essentials/api-essentials/response-status-and-error-codes?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp#http-status-codes).
 
 ## 🤝 Contributing
 
