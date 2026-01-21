@@ -151,7 +151,7 @@ Make sure to follow official [MCP implementation guidelines](https://modelcontex
 
 ## 🚀 Infobip MCP Servers in Use
 
-Learn how to build, configure, and integrate various Infobip MCP servers with our [hands-on MCP tutorials](https://www.infobip.com/docs/tutorials?page=1&filter=%26products%3Dinfobip-mcp).
+Learn how to build, configure, and integrate various Infobip MCP servers with our [hands-on MCP tutorials](https://www.infobip.com/docs/tutorials?page=1&filter=%26products%3Dinfobip-mcp&utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
 
 ## 🤝 Contributing
 
