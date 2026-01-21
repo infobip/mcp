@@ -149,6 +149,10 @@ Make sure to follow official [MCP implementation guidelines](https://modelcontex
 **Other Issues**
 - For HTTP status codes and error details, see the [troubleshooting guide](https://www.infobip.com/docs/essentials/api-essentials/response-status-and-error-codes?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp#http-status-codes).
 
+## 🚀 Infobip MCP Servers in Use
+
+Learn how to build, configure, and integrate various Infobip MCP servers with our [hands-on MCP tutorials](https://www.infobip.com/docs/tutorials?page=1&filter=%26products%3Dinfobip-mcp).
+
 ## 🤝 Contributing
 
 If you have suggestions for improvements, please contact [devrel@infobip.com](mailto:devrel@infobip.com).
