@@ -31,12 +31,14 @@ Below is a list of available remote MCP servers.
 | **Viber**                            | `https://mcp.infobip.com/viber`              |
 | **RCS**                              | `https://mcp.infobip.com/rcs`                |
 | **Voice**                            | `https://mcp.infobip.com/voice`              |
+| **WhatsApp Flow**                    | `https://mcp.infobip.com/whatsapp-flow`      |
 | **2FA**                              | `https://mcp.infobip.com/2fa`                |
 | **People**                           | `https://mcp.infobip.com/people`             |
 | **Account Management**               | `https://mcp.infobip.com/account-management` |
 | **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` |
 | **CAMARA**                           | `https://mcp.infobip.com/camara`             |
 | **Infobip Documentation**            | `https://mcp.infobip.com/search`             |
+| **Infobip Deep Research**            | `https://mcp.infobip.com/deep-research`      |
 
 For more details on supported endpoints, see the [Infobip MCP documentation](https://www.infobip.com/docs/mcp?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
 
