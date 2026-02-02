@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "@openai/agents": "^0.1.4",
-    "zod": "^3.25.76"
+    "@openai/agents": "^0.4.4",
+    "zod": "^4.3.6"
   }
 }
