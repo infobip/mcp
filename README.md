@@ -24,21 +24,21 @@ Below is a list of available remote MCP servers.
 
 **Base URL:** `https://mcp.infobip.com`
 
-| Server                               | Endpoint                                     |
-|--------------------------------------|----------------------------------------------|
-| **SMS**                              | `https://mcp.infobip.com/sms`                |
-| **WhatsApp**                         | `https://mcp.infobip.com/whatsapp`           |
-| **Viber**                            | `https://mcp.infobip.com/viber`              |
-| **RCS**                              | `https://mcp.infobip.com/rcs`                |
-| **Voice**                            | `https://mcp.infobip.com/voice`              |
-| **WhatsApp Flow**                    | `https://mcp.infobip.com/whatsapp-flow`      |
-| **2FA**                              | `https://mcp.infobip.com/2fa`                |
-| **People**                           | `https://mcp.infobip.com/people`             |
-| **Account Management**               | `https://mcp.infobip.com/account-management` |
-| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` |
-| **CAMARA**                           | `https://mcp.infobip.com/camara`             |
-| **Infobip Documentation**            | `https://mcp.infobip.com/search`             |
-| **Infobip Deep Research**            | `https://mcp.infobip.com/deep-research`      |
+| Server                               | Endpoint                                     | Features                                                                                          |
+|--------------------------------------|----------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **SMS**                              | `https://mcp.infobip.com/sms`                | Send and preview messages, schedule and reschedule, bulk sending, multilingual support (transliteration, character sets), delivery reports, message logs, URL tracking|
+| **WhatsApp**                         | `https://mcp.infobip.com/whatsapp`           | Send template messages, send text/media (text, document, image, audio, video, sticker), send location/contact messages, template management (create, edit, delete, retrieve), delivery reports, message logs, SMS failover |
+| **Viber**                            | `https://mcp.infobip.com/viber`              | Send messages with rich media (images, videos, files, URLs), delivery reports, message logs, scheduling, SMS failover, URL tracking |
+| **RCS**                              | `https://mcp.infobip.com/rcs`                | Send rich messages (multimedia, suggested replies, carousels, barcodes), delivery reports, message logs, capability check, SMS/MMS failover |
+| **Voice**                            | `https://mcp.infobip.com/voice`              | Single and multi-recipient voice calls, text-to-speech, pre-recorded audio, call management, conference calls, voice list management, delivery reports, call logs |
+| **WhatsApp Flow**                    | `https://mcp.infobip.com/whatsapp-flow`      | Create and manage static/dynamic flows, generate flow structure, manage flow JSON, send interactive flows, preview flows, add and manage interactive components (forms, buttons, checkboxes) |
+| **2FA**                              | `https://mcp.infobip.com/2fa`                | Application management, message templates (SMS/Email), send PIN (SMS/Voice/Email), resend and verify PIN, PIN verification status |
+| **People**                           | `https://mcp.infobip.com/people`             | Manage Person profiles, add and manage company profiles, tags, custom attributes and lists, track and export events, audience segmentation |
+| **Account Management**               | `https://mcp.infobip.com/account-management` | Account balance, free messages count, total balance, manage and update account details, audit logs |
+| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Create and manage applications and entities, resource associations, inbound message configuration, list resources, coverage lookup, resource request submission and tracking |
+| **CAMARA**                           | `https://mcp.infobip.com/camara`             | Number verification authorization, verify number, device location verification, SIM swap check, SIM swap date retrieval, KYC match |
+| **Infobip Documentation**            | `https://mcp.infobip.com/search`             | Documentation search, API reference, use cases, product guides                                    |
+| **Infobip Deep Research**            | `https://mcp.infobip.com/deep-research`      | Deep search across API documentation, fetch detailed content                                      |
 
 For more details on supported endpoints, see the [Infobip MCP documentation](https://www.infobip.com/docs/mcp?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
 
