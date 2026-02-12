@@ -1,7 +1,5 @@
 # Infobip MCP Servers
 
-![status](https://img.shields.io/badge/Status-Beta-fc6423)
-
 <img src="https://cdn-web.infobip.com/uploads/2025/05/infobip-logo-horizontal-orange.png" alt="Infobip Logo" height="48" style="display:inline;vertical-align:middle;">
 
 [Infobip MCP Servers](https://www.infobip.com/docs/mcp?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp) let you build AI agents to interact with the Infobip platform through the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs).
