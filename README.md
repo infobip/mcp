@@ -35,6 +35,7 @@ Below is a list of available remote MCP servers.
 | **Account Management**               | `https://mcp.infobip.com/account-management` | Account balance, free messages count, total balance, manage and update account details, audit logs |
 | **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Create and manage applications and entities, resource associations, inbound message configuration, list resources, coverage lookup, resource request submission and tracking |
 | **CAMARA**                           | `https://mcp.infobip.com/camara`             | Number verification authorization, verify number, device location verification, SIM swap check, SIM swap date retrieval, KYC match |
+| **Mobile App Messaging**             | `https://mcp.infobip.com/mobile-app-messaging` | Send push notifications, delivery reports, message logs, push statistics, push application management, inbox message management |
 | **Infobip Documentation**            | `https://mcp.infobip.com/search`             | Documentation search, API reference, use cases, product guides                                    |
 | **Infobip Deep Research**            | `https://mcp.infobip.com/deep-research`      | Deep search across API documentation, fetch detailed content                                      |
 
