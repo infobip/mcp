@@ -15,6 +15,11 @@ No more complex integrations or digging through endless documentation. Just plug
 - 🧑‍💼 Store & activate your customer information
 - 👤 Manage Infobip user accounts
 
+## 📋 Prerequisites
+
+- [Infobip account](https://infobip.com/signup?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp) - free trial available
+- AI Client
+
 ## 🌐 Available Remote MCP Servers
 
 Infobip remote MCP servers support [streamable HTTP transport](https://modelcontextprotocol.io/docs/learn/architecture#transport-layer).
@@ -105,8 +110,7 @@ If your agent does not support remote MCP servers, you can use a bridge like [mc
 
 ## 🔐 Authentication and Authorization
 
-To use Infobip MCP servers, you need an Infobip account.
-If you don't have one, [create an Infobip account with a free trial](https://infobip.com/signup?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
+To use Infobip MCP servers, you need an Infobip account. If you don't have one, [create an Infobip account with a free trial](https://infobip.com/signup?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
 
 ### Using an API Key
 
@@ -148,7 +152,7 @@ Example configuration for Claude Desktop:
 }
 ```
 
-## Agent Permission and Access Control
+## ⚠️ Agent Permission and Access Control
 
 Effective AI agent governance requires implementing granular permission controls, especially for high-impact operations like message sending. Unrestricted access privileges pose substantial security vulnerabilities and operational hazards that can compromise system integrity and user trust.
 
