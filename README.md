@@ -7,18 +7,33 @@ Connect to Infobip and enable your agents to perform actions, such as sending me
 
 No more complex integrations or digging through endless documentation. Just plug in and let your AI do the talking.
 
-
 ## 🛠️ Features
 
-- ✉️ Send messages using channels like SMS, WhatsApp, Viber, or RCS (more coming soon)
+- ✉️ Send messages using channels like SMS, WhatsApp, RCS, Viber, Voice, Mobile push
 - 📱 Set up and run 2FA flows
-- 🧑‍💼 Store & activate your customer information
+- 📱 Use Telco network capabilities to improve authentication methods and enhance the security of online transactions
+- 👤 Store & activate your customer information
 - 👤 Manage Infobip user accounts
+- 👤 Orchestrate multi-tenant workflows with CPaaS X
+- 🔍 Explore Infobip documentation
+- 🔍 Let deep research models search and retrieve Infobip documentation as a data source
 
 ## 📋 Prerequisites
 
 - [Infobip account](https://infobip.com/signup?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp) - free trial available
 - AI Client
+---  
+  ### Table of Contents
+  - [🌐 Available Remote MCP Servers](#-available-remote-mcp-servers)
+  - [🔐 Authentication and Authorization](#-authentication-and-authorization)
+    - [Using an API Key](#using-an-api-key)
+    - [Using OAuth 2.1](#using-oauth-21)
+  - [🤖 Agent Permission and Access Control](#-agent-permission-and-access-control)
+  - [🛠️ Troubleshooting](#️-troubleshooting)
+  - [🚀 Infobip MCP Servers in Use](#-infobip-mcp-servers-in-use)
+  - [🤝 Contributing](#-contributing)
+  - [📄 License](#-license)
+---
 
 ## 🌐 Available Remote MCP Servers
 
@@ -27,7 +42,7 @@ Below is a list of available remote MCP servers.
 
 **Base URL:** `https://mcp.infobip.com`
 
-### Messaging channels
+### ✉️ Messaging channels
 
 | Server | Endpoint | Features |
 |---|---|---|
@@ -39,14 +54,14 @@ Below is a list of available remote MCP servers.
 | **Voice** | `https://mcp.infobip.com/voice` | Single and multi-recipient voice calls, text-to-speech, pre-recorded audio, call management, conference calls, voice list management, delivery reports, call logs |
 | **Mobile App Messaging** | `https://mcp.infobip.com/mobile-app-messaging` | Send push notifications, delivery reports, message logs, push statistics, push application management, inbox message management |
 
-### Authentication and verification
+### 📱 Authentication and verification
 
 | Server | Endpoint | Features |
 |---|---|---|
 | **2FA** | `https://mcp.infobip.com/2fa` | Application management, message templates (SMS/Email), send PIN (SMS/Voice/Email), resend and verify PIN, PIN verification status |
 | **CAMARA** | `https://mcp.infobip.com/camara` | Number verification authorization, verify number, device location verification, SIM swap check, SIM swap date retrieval, KYC match |
 
-### Customer data and platform management
+### 👤 Customer data and platform management
 
 | Server | Endpoint | Features |
 |---|---|---|
@@ -54,7 +69,7 @@ Below is a list of available remote MCP servers.
 | **Account Management** | `https://mcp.infobip.com/account-management` | Account balance, free messages count, total balance, manage and update account details, audit logs |
 | **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Create and manage applications and entities, resource associations, inbound message configuration, list resources, coverage lookup, resource request submission and tracking |
 
-### Developer resources
+### 🔍 Developer resources
 
 | Server | Endpoint | Features |
 |---|---|---|
@@ -67,7 +82,7 @@ Examples of using Infobip MCP servers with different frameworks can be found in 
 
 > If you need SSE transport support, append `/sse` to the endpoint URL (e.g., `https://mcp.infobip.com/sms/sse`).
 
-### Using an HTTP Transport Option
+## Using an HTTP Transport Option
 
 Use the `HTTP` transport method to connect directly to an Infobip MCP Server:
 
@@ -85,7 +100,7 @@ Use the `HTTP` transport method to connect directly to an Infobip MCP Server:
 }
 ```
 
-### Using a STDIO Transport Bridge
+## Using a STDIO Transport Bridge
 
 If your agent does not support remote MCP servers, you can use a bridge like [mcp-remote](https://github.com/geelen/mcp-remote).
 
@@ -152,7 +167,7 @@ Example configuration for Claude Desktop:
 }
 ```
 
-## ⚠️ Agent Permission and Access Control
+## 🤖 Agent Permission and Access Control
 
 Effective AI agent governance requires implementing granular permission controls, especially for high-impact operations like message sending. Unrestricted access privileges pose substantial security vulnerabilities and operational hazards that can compromise system integrity and user trust.
 
