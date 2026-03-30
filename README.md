@@ -199,3 +199,8 @@ If you have suggestions for improvements, please contact [devrel@infobip.com](ma
 This document is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 **Happy building with Infobip MCP! 🚀**
+
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/infobip-mcp).
+
