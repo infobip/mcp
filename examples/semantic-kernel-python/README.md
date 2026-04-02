@@ -15,8 +15,10 @@ source .venv/bin/activate
 ### 2. Install dependencies
 
 ```bash
-uv sync
+uv sync --prerelease=allow
 ```
+
+> **Note:** The `--prerelease=allow` flag is required because `semantic-kernel` depends on prerelease versions of `azure-ai-agents` and `azure-ai-projects` (see [semantic-kernel/pyproject.toml](https://github.com/microsoft/semantic-kernel/blob/main/python/pyproject.toml#L28)). Without this flag, `uv` will refuse to install prerelease packages and dependency resolution will fail.
 
 ### 3. Configure environment variables
 
