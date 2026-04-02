@@ -5,8 +5,8 @@ description = "A demo project using Infobip MCP with LangGraph SDK."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "langchain-mcp-adapters>=0.1.11",
-    "langchain[aws]>=0.3.27",
-    "langgraph>=0.6.8",
-    "python-dotenv>=1.1.1",
+    "langchain-mcp-adapters>=0.2.2",
+    "langchain-aws>=1.4.2",
+    "langgraph>=1.1.4",
+    "python-dotenv>=1.2.2",
 ]
