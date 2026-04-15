@@ -64,11 +64,11 @@ Below is a list of available remote MCP servers.
 
 ### 👤 Customer data and platform management
 
-| Server | Endpoint | Features |
-|---|---|---|
+| Server | Endpoint | Features                                                                                                                                   |
+|---|---|--------------------------------------------------------------------------------------------------------------------------------------------|
 | **People** | `https://mcp.infobip.com/people` | Manage Person profiles, add and manage company profiles, tags, custom attributes and lists, track and export events, audience segmentation |
-| **Account Management** | `https://mcp.infobip.com/account-management` | Account balance, free messages count, total balance, manage and update account details, audit logs |
-| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Create and manage applications and entities, resource associations, inbound message configuration, list resources, coverage lookup, resource request submission and tracking |
+| **Account Management** | `https://mcp.infobip.com/account-management` | Account balance, free messages count, total balance, manage and update account details, audit logs                                         |
+| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Create and manage CPaaSX applications, entities and resource associations.                                                                 |
 
 ### 🔍 Developer resources
 
