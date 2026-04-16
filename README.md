@@ -21,13 +21,14 @@ No more complex integrations or digging through endless documentation. Just plug
 ## 📋 Prerequisites
 
 - [Infobip account](https://infobip.com/signup?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp) - free trial available
-- AI Client
+- AI agent or application with MCP client support
 ---  
   ### Table of Contents
   - [🌐 Available Remote MCP Servers](#-available-remote-mcp-servers)
+  - [🔌 HTTP Transport](#-http-transport)
   - [🔐 Authentication and Authorization](#-authentication-and-authorization)
-    - [Using an API Key](#using-an-api-key)
     - [Using OAuth 2.1](#using-oauth-21)
+    - [Using an API Key](#using-an-api-key)
   - [🤖 Agent Permission and Access Control](#-agent-permission-and-access-control)
   - [🛠️ Troubleshooting](#️-troubleshooting)
   - [🚀 Infobip MCP Servers in Use](#-infobip-mcp-servers-in-use)
@@ -63,11 +64,11 @@ Below is a list of available remote MCP servers.
 
 ### 👤 Customer data and platform management
 
-| Server | Endpoint | Features |
-|---|---|---|
+| Server | Endpoint | Features                                                                                                                                   |
+|---|---|--------------------------------------------------------------------------------------------------------------------------------------------|
 | **People** | `https://mcp.infobip.com/people` | Manage Person profiles, add and manage company profiles, tags, custom attributes and lists, track and export events, audience segmentation |
-| **Account Management** | `https://mcp.infobip.com/account-management` | Account balance, free messages count, total balance, manage and update account details, audit logs |
-| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Create and manage applications and entities, resource associations, inbound message configuration, list resources, coverage lookup, resource request submission and tracking |
+| **Account Management** | `https://mcp.infobip.com/account-management` | Account balance, free messages count, total balance, manage and update account details, audit logs                                         |
+| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Set up multi-tenant messaging by creating and managing CPaaSX resources, like applications and entities.                                                                 |
 
 ### 🔍 Developer resources
 
@@ -82,62 +83,32 @@ Examples of using Infobip MCP servers with different frameworks can be found in 
 
 > If you need SSE transport support, append `/sse` to the endpoint URL (e.g., `https://mcp.infobip.com/sms/sse`).
 
-## Using an HTTP Transport Option
+## 🔌 HTTP Transport
 
-Use the `HTTP` transport method to connect directly to an Infobip MCP Server:
-
-```json
-{
- "mcpServers": {
-   "ib-sms": {
-     "type": "http",
-     "url": "https://mcp.infobip.com/sms",
-     "headers": {
-       "Authorization": "App ${INFOBIP_API_KEY}"
-     }
-   }
- }
-}
-```
-
-## Using a STDIO Transport Bridge
-
-If your agent does not support remote MCP servers, you can use a bridge like [mcp-remote](https://github.com/geelen/mcp-remote).
+Infobip MCP servers support [streamable HTTP transport](https://modelcontextprotocol.io/docs/learn/architecture#transport-layer). Connect your MCP client directly to any Infobip MCP server endpoint:
 
 ```json
 {
   "mcpServers": {
     "infobip-sms": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "https://mcp.infobip.com/sms",
-        "--header",
-        "Authorization: App ${INFOBIP_API_KEY}"
-      ],
-      "env": {
-        "INFOBIP_API_KEY": "<Your Infobip API Key here>"
-      }
+      "type": "http",
+      "url": "https://mcp.infobip.com/sms"
     }
   }
 }
 ```
 
+> If your MCP client supports OAuth 2.1, the authorization flow will be triggered automatically on first connection. See [Authentication and Authorization](#-authentication-and-authorization) below.
+
 ## 🔐 Authentication and Authorization
 
 To use Infobip MCP servers, you need an Infobip account. If you don't have one, [create an Infobip account with a free trial](https://infobip.com/signup?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp).
 
-### Using an API Key
-
-If your MCP client supports adding additional headers through configuration or environment variables, you can use your [Infobip API key](https://www.infobip.com/docs/essentials/api-essentials/api-authentication?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp#api-key-header) and provide it in the `Authorization` header using the following format: `App ${INFOBIP_API_KEY}`.
-See the `mcp-remote` [example](#using-a-stdio-transport-bridge) above for setup details.
-
 ### Using OAuth 2.1
 
 Infobip MCP servers support OAuth 2.1 authentication.
-To use OAuth 2.1, your MCP client must support OAuth 2.1 authentication and dynamic OAuth authorization server [metadata discovery](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization#server-metadata-discovery).
-To start the OAuth flow, configure your MCP client to connect to the Infobip MCP server without providing authentication credentials.
-Your MCP client should initiate the OAuth flow automatically, redirecting you to the Infobip OAuth server for authentication.
+To use OAuth 2.1, your MCP client must support OAuth 2.1 authentication and [Authorization Server Discovery](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization#authorization-server-discovery).
+You can then configure your MCP client to connect to the Infobip MCP server without the need to provide authentication credentials at that point. The OAuth flow will be triggered automatically, redirecting you to the Infobip OAuth server for authentication.
 
 #### Discovering Supported Scopes
 
@@ -148,20 +119,19 @@ The scopes for a particular MCP server can be found in the authorization server 
 For example, for the Infobip SMS MCP server, the scopes are available at:
 https://mcp.infobip.com/sms/.well-known/oauth-authorization-server
 
-Example configuration for Claude Desktop:
+### Using an API Key
+
+You can authenticate using your [Infobip API key](https://www.infobip.com/docs/essentials/api-essentials/api-authentication?utm_source=infobip-mcp-github&utm_medium=referral&utm_campaign=mcp#api-key-header) by providing it in the `Authorization` header using the format `App ${INFOBIP_API_KEY}`:
 
 ```json
 {
   "mcpServers": {
     "infobip-sms": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "https://mcp.infobip.com/sms",
-        "--debug",
-        "--static-oauth-client-metadata",
-        "{\"scope\":\"sms:manage profile\"}"
-      ]
+      "type": "http",
+      "url": "https://mcp.infobip.com/sms",
+      "headers": {
+        "Authorization": "App ${INFOBIP_API_KEY}"
+      }
     }
   }
 }
