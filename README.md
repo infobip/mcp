@@ -68,7 +68,7 @@ Below is a list of available remote MCP servers.
 |---|---|--------------------------------------------------------------------------------------------------------------------------------------------|
 | **People** | `https://mcp.infobip.com/people` | Manage Person profiles, add and manage company profiles, tags, custom attributes and lists, track and export events, audience segmentation |
 | **Account Management** | `https://mcp.infobip.com/account-management` | Account balance, free messages count, total balance, manage and update account details, audit logs                                         |
-| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Create and manage CPaaSX applications, entities and resource associations.                                                                 |
+| **CPaaSX Applications and Entities** | `https://mcp.infobip.com/application-entity` | Set up multi-tenant messaging by creating and managing CPaaSX resources, like applications and entities.                                                                 |
 
 ### 🔍 Developer resources
 
