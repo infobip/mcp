@@ -108,7 +108,7 @@ To use Infobip MCP servers, you need an Infobip account. If you don't have one, 
 
 Infobip MCP servers support OAuth 2.1 authentication.
 To use OAuth 2.1, your MCP client must support OAuth 2.1 authentication and [Authorization Server Discovery](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization#authorization-server-discovery).
-Configure your MCP client to connect to the Infobip MCP server without providing authentication credentials — the OAuth flow will be triggered automatically, redirecting you to the Infobip OAuth server for authentication.
+You can then configure your MCP client to connect to the Infobip MCP server without the need to provide authentication credentials at that point. The OAuth flow will be triggered automatically, redirecting you to the Infobip OAuth server for authentication.
 
 #### Discovering Supported Scopes
 
