@@ -9,7 +9,7 @@ No more complex integrations or digging through endless documentation. Just plug
 
 ## 🛠️ Features
 
-- ✉️ Send messages using channels like SMS, WhatsApp, RCS, Viber, Voice, Mobile push
+- ✉️ Send messages using channels like SMS, WhatsApp, RCS, Email, Viber, Voice, Mobile push
 - 📱 Set up and run 2FA flows
 - 📱 Use Telco network capabilities to improve authentication methods and enhance the security of online transactions
 - 👤 Store & activate your customer information
@@ -52,6 +52,7 @@ Below is a list of available remote MCP servers.
 | **WhatsApp Flow** | `https://mcp.infobip.com/whatsapp-flow` | Create and manage static/dynamic flows, generate flow structure, manage flow JSON, send interactive flows, preview flows, add and manage interactive components (forms, buttons, checkboxes) |
 | **Viber** | `https://mcp.infobip.com/viber` | Send messages with rich media (images, videos, files, URLs), delivery reports, message logs, scheduling, SMS failover, URL tracking |
 | **RCS** | `https://mcp.infobip.com/rcs` | Send rich messages (multimedia, suggested replies, carousels, barcodes), delivery reports, message logs, capability check, SMS/MMS failover |
+| **Email** | `https://mcp.infobip.com/email` | Send email messages, send bulk messages, schedule and manage scheduled email and bulk email messages, validate email address |
 | **Voice** | `https://mcp.infobip.com/voice` | Single and multi-recipient voice calls, text-to-speech, pre-recorded audio, call management, conference calls, voice list management, delivery reports, call logs |
 | **Mobile App Messaging** | `https://mcp.infobip.com/mobile-app-messaging` | Send push notifications, delivery reports, message logs, push statistics, push application management, inbox message management |
 
