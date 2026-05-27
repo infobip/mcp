@@ -30,6 +30,7 @@ No more complex integrations or digging through endless documentation. Just plug
     - [Using OAuth 2.1](#using-oauth-21)
     - [Using an API Key](#using-an-api-key)
   - [🤖 Agent Permission and Access Control](#-agent-permission-and-access-control)
+  - [📊 Messaging Features Comparision Matrix](#-messaging-features-comparision-matrix)
   - [🛠️ Troubleshooting](#️-troubleshooting)
   - [🚀 Infobip MCP Servers in Use](#-infobip-mcp-servers-in-use)
   - [🤝 Contributing](#-contributing)
@@ -55,6 +56,9 @@ Below is a list of available remote MCP servers.
 | **Email** | `https://mcp.infobip.com/email` | Send email messages, send bulk messages, schedule and manage scheduled email and bulk email messages, validate email address |
 | **Voice** | `https://mcp.infobip.com/voice` | Single and multi-recipient voice calls, text-to-speech, pre-recorded audio, call management, conference calls, voice list management, delivery reports, call logs |
 | **Mobile App Messaging** | `https://mcp.infobip.com/mobile-app-messaging` | Send push notifications, delivery reports, message logs, push statistics, push application management, inbox message management |
+| **Message** | `https://mcp.infobip.com/message` | Send text, image, or file URL messages across SMS, RCS, MMS, and Viber in a single tool call, get delivery reports |
+
+For feature and token consumption overview, see: [📊 Messaging Features Comparision Matrix](#-messaging-features-comparision-matrix)
 
 ### 📱 Authentication and verification
 
@@ -144,6 +148,44 @@ Effective AI agent governance requires implementing granular permission controls
 
 Make sure to follow official [MCP implementation guidelines](https://modelcontextprotocol.io/specification/draft/server/prompts#implementation-considerations).
 
+## 📊 Messaging Features Comparision Matrix
+
+Choose the right messaging MCP server for your use case. Each server exposes a different number of tools which directly affects the tokens consumed on every agent invocation. The **Message MCP server** is the lowest-footprint option for a simple notification use cases that do not require scheduling, logs, or channel-specific management.
+  
+  | Feature | Message MCP server | SMS | WhatsApp | WA Flow | RCS | Viber | Email | Voice | Mobile Push |
+  |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+  | **Channels covered** | SMS, RCS, MMS, Viber | SMS | WhatsApp | WhatsApp | RCS | Viber | Email | Voice | Push |
+  | **Send text** | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ |
+  | **Send image URL** | ✅ | — | ✅ | — | ✅ | ✅ | ✅ | — | — |
+  | **Send file / document URL** | ✅ | — | ✅ | — | ✅ | ✅ | ✅ | — | — |
+  | **Send video** | — | — | ✅ | — | ✅ | ✅ | — | — | — |
+  | **Send audio** | — | — | ✅ | — | — | — | — | ✅ | — |
+  | **Send location / contact / sticker** | — | — | ✅ | — | — | — | — | — | — |
+  | **Rich media** (cards, carousels, barcodes) | — | — | — | — | ✅ | — | — | — | — |
+  | **Interactive flows** | — | — | — | ✅ | — | — | — | — | — |
+  | **AI flow generation** | — | — | — | ✅ | — | — | — | — | — |
+  | **Multi-channel in one tool** | ✅ | — | — | — | — | — | — | — | — |
+  | **Template messages** | — | — | ✅ | — | ✅ | — | ✅ | — | — |
+  | **Template management** | — | — | ✅ | ✅ | ✅ | — | — | — | — |
+  | **Sender management** | — | — | — | — | ✅ | — | — | — | — |
+  | **Push app management** | — | — | — | — | — | — | — | — | ✅ |
+  | **Delivery reports (DLR)** | ✅ planned | ✅ | ✅ | — | ✅ | ✅ | — | ✅ | ✅ |
+  | **Message logs** | — | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ |
+  | **Scheduling** | — | ✅ | — | — | — | — | ✅ | — | — |
+  | **Bulk / batch sending** | — | ✅ | — | — | — | — | ✅ | ✅ | ✅ |
+  | **Transliteration / char sets** | — | ✅ | — | — | — | — | — | — | — |
+  | **URL tracking** | — | ✅ | — | — | — | — | — | — | — |
+  | **Capability check** | — | — | — | — | ✅ | — | — | — | — |
+  | **Email address validation** | — | — | — | — | — | — | ✅ | — | — |
+  | **TTS voice catalog** | — | — | — | — | — | — | — | ✅ | — |
+  | **Inbox management** | — | — | — | — | — | — | — | — | ✅ |
+  | **Scheduling helper tools** | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+  | **Number of tools** | **1–2** | 10 | 18 | 13 | 27 | 5 | 11 | 7 | 7 |
+  | **Token consumption** | **Minimal** | Medium | High | High | Very high | Low | Medium | Low | Low |
+
+
+
+--------------------------------------------------------------------------------
 ## 🛠️ Troubleshooting
 
 **Authentication and Authorization Issues**
