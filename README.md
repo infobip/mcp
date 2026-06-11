@@ -152,7 +152,7 @@ Make sure to follow official [MCP implementation guidelines](https://modelcontex
 
 Choose the right messaging MCP server for your use case. Each server exposes a different number of tools which directly affects the tokens consumed on every agent invocation. The **Message MCP server** is the lowest-footprint option for a simple notification use cases that do not require scheduling, logs, or channel-specific management.
   
-  | Feature | Message MCP server | SMS | WhatsApp | WA Flow | RCS | Viber | Email | Voice | Mobile Push |
+  | Feature | Message | SMS | WhatsApp | WA Flow | RCS | Viber | Email | Voice | Mobile Push |
   |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
   | **Channels covered** | SMS, RCS, MMS, Viber | SMS | WhatsApp | WhatsApp | RCS | Viber | Email | Voice | Push |
   | **Send text** | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ |
