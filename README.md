@@ -181,7 +181,7 @@ Choose the right messaging MCP server for your use case. Each server exposes a d
   | **Inbox management** | — | — | — | — | — | — | — | — | ✅ |
   | **Scheduling helper tools** | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
   | **Number of tools** | **1–2** | 10 | 18 | 13 | 27 | 5 | 11 | 7 | 7 |
-  | **Token consumption** | **Minimal** | Medium | High | High | Very high | Low | Medium | Low | Low |
+  | **Token consumption** | **Minimal** | Medium | High | Medium | Very high | Medium | Medium | Low | Medium |
 
 
 
