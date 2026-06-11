@@ -56,7 +56,7 @@ Below is a list of available remote MCP servers.
 | **Email** | `https://mcp.infobip.com/email` | Send email messages, send bulk messages, schedule and manage scheduled email and bulk email messages, validate email address |
 | **Voice** | `https://mcp.infobip.com/voice` | Single and multi-recipient voice calls, text-to-speech, pre-recorded audio, call management, conference calls, voice list management, delivery reports, call logs |
 | **Mobile App Messaging** | `https://mcp.infobip.com/mobile-app-messaging` | Send push notifications, delivery reports, message logs, push statistics, push application management, inbox message management |
-| **Message** | `https://mcp.infobip.com/message` | Send text, image, or file URL messages across SMS, RCS, MMS, and Viber in a single tool call, get delivery reports |
+| ![Early Access](https://img.shields.io/badge/early%20access-F97316?style=flat-square&color=F97316&logoColor=white) **Message** | `https://mcp.infobip.com/message` | Send text, image, or file URL messages across SMS, RCS, MMS, and Viber in a single tool call, get delivery reports |
 
 For feature and token consumption overview, see: [📊 Messaging Features Comparision Matrix](#-messaging-features-comparision-matrix)
 
