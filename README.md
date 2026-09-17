@@ -11,6 +11,7 @@ No more complex integrations or digging through endless documentation. Just plug
 
 - ✉️ Send messages using channels like SMS, WhatsApp, RCS, Email, Viber, Voice, Mobile push
 - ✉️ Register senders, purchase numbers, and manage channel setup
+- ✉️ Look up delivery metrics, billing usage, error codes, and message logs
 - 📱 Set up and run 2FA flows
 - 📱 Use Telco network capabilities to improve authentication methods and enhance the security of online transactions
 - 👤 Store & activate your customer information
@@ -59,6 +60,7 @@ Below is a list of available remote MCP servers.
 | **Mobile App Messaging** | `https://mcp.infobip.com/mobile-app-messaging` | Send push notifications, delivery reports, message logs, push statistics, push application management, inbox message management |
 |![Early Access](https://img.shields.io/badge/early%20access-F97316?style=flat-square&color=F97316&logoColor=white) **Message** | `https://mcp.infobip.com/message` | Send text, image, or file URL messages across SMS, RCS, MMS, and Viber in a single tool call, get delivery reports |
 |![Early Access](https://img.shields.io/badge/early%20access-F97316?style=flat-square&color=F97316&logoColor=white) **Provisioning** | `https://mcp.infobip.com/provision` | Register a sender, purchase a number, and configure channel senders. The agent collects the required information, applies the right rules for the target channel and market, and submits the provisioning request in a single conversation |
+|![Early Access](https://img.shields.io/badge/early%20access-F97316?style=flat-square&color=F97316&logoColor=white) **Observe** | `https://mcp.infobip.com/observe` | Look up delivery metrics, billing usage, error codes, and message logs. Closes the loop so agents can reason about traffic they already sent. |
 
 * For feature and token consumption overview, see: [📊 Messaging Features Comparision Matrix](#-messaging-features-comparision-matrix)
 * For more information on Provision MCP and how the registration workflow works, see: [Infobip Product documentation](https://www.infobip.com/docs/mcp/provisioning-mcp)
